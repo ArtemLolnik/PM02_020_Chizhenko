@@ -1,0 +1,33 @@
+﻿<Window x:Class="PM02_020_Chizhenko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PM02_020_Chizhenko"
+        mc:Ignorable="d"
+        Title="Холодильники методом минимальных значений. Главное меню" Height="720" Width="1080">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="184*"/>
+            <RowDefinition Height="497*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="333*"/>
+            <ColumnDefinition Width="729*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Magazini" Text="Магазины" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Width="120" Margin="107,23.688,0,0" FontFamily="Tw Cen MT" Foreground="#FF78909C" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Магазины" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Margin="0,23.688,0,0" FontFamily="Tw Cen MT" Foreground="#37474F" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="Skladi" Text="Склады" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Width="120" Margin="107,77.688,0,0" FontFamily="Tw Cen MT" Foreground="#FF78909C" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Склады" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Margin="0,77.688,0,0" FontFamily="Tw Cen MT" Foreground="#37474F" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="Matrica" Text="Матрица" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Width="148" Margin="175,132,0,0" FontFamily="Tw Cen MT" Foreground="#FF78909C" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Транспортная матрица" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Margin="0,131.688,0,0" FontFamily="Tw Cen MT" Foreground="#37474F" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="Execute" Content="Решить" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Width="102" Margin="213,13,0,0" FontFamily="Tw Cen MT" Grid.Column="2" Grid.Row="1" Background="#FFFF9C1A" Click="Execute_Click"/>
+        <Button x:Name="Clear" Content="Очистить поля" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Width="102" Margin="213,67,0,0" FontFamily="Tw Cen MT" Grid.Column="2" Grid.Row="1" Background="#FFFF9C1A" Click="Clear_Click"/>
+        <Label x:Name="txtResult" Content="Решение" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" FontFamily="Tw Cen MT" Foreground="#37474F"/>
+        <Button x:Name="Save" Content="Сохранить план" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Height="38" Margin="213,121,0,0" FontFamily="Tw Cen MT" Grid.Column="2" Grid.Row="1" Background="#FFFF9C1A" Click="Save_Click"/>
+        <Label Content="Правила заполнения транспортной матрицы:&#10;Запятая (&quot;,&quot;) - разделение цифр в строке&#10;Точка с запятой (&quot;;&quot;) - новая строка" Grid.Column="1" HorizontalAlignment="Left" Margin="10,34,0,0" Grid.Row="2" VerticalAlignment="Top" FontFamily="Tw Cen MT" Foreground="#37474F"/>
+
+    </Grid>
+</Window>
